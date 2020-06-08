@@ -1,2 +1,7 @@
-python3 -m pip install dist/SVWCBS-0.1-py3-none-any.whl
+# download the zipped package via GitHub
+# unzip the package
+# using any command line shell go into the directory SVW_CBS_pkg
+# run the following command using pip, potentially replace python3 with python depending on your python and pip versions
+
+python3 -m pip install dist/SVWCBS-0.1-py3-none-any.whl 
 
