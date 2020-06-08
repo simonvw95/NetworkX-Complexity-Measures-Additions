@@ -1,0 +1,12 @@
+README.md
+setup.py
+SVWCBS/__init__.py
+SVWCBS/complf.py
+SVWCBS/genf.py
+SVWCBS/helperf.py
+SVWCBS/rankn.py
+svwcbs.egg-info/PKG-INFO
+svwcbs.egg-info/SOURCES.txt
+svwcbs.egg-info/dependency_links.txt
+svwcbs.egg-info/requires.txt
+svwcbs.egg-info/top_level.txt

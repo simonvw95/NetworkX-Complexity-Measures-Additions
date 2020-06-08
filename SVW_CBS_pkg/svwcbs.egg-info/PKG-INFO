@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: svwcbs
+Version: 0.1
+Summary: Package for CBS network complexities
+Home-page: https://github.com/javatechy/dokr
+Author: Simon van Wageningen
+Author-email: simon.van.wageningen@outlook.com
+License: UNKNOWN
+Description: # SVW_SCBS
+        
+        This package contains implementations of network complexity measures and node ranking measures created by Leon Willenborg. These measures were implemented by Simon van Wageningen during his internship at CBS/Statistics Netherlands.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
