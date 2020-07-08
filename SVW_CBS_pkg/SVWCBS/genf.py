@@ -81,16 +81,20 @@ def random_routing_graph(n, p = None):
                 A[i, j] = 1
                 
     G = nx.DiGraph(A)
-    # check which nodes do not connect to the sink
-    nodes_list = np.array(G.nodes())[0:-1]
-
-    # loop over the reversed list!
+    
+    # get the node list
+    nodes_list = list(G.nodes())[0:-1]
+    n = len(nodes_list)
+    # check which nodes are not connected to the source and sink
+    # loop over the reversed list for the sink!
     # this is done to create a trickle effect
     # if node X connects to the sink and if node X-1 is also connected to node X
     # then node X-1 is also connected to the sink
     
-    for i in list(reversed(nodes_list)):
-        if nx.has_path(G, i, (n - 1)) == False:
-            G.add_edge(i, (n - 1))
+    for i in range(len(nodes_list)):
+        if nx.has_path(G, 0, i) == False:
+            G.add_edge(0, nodes_list[i])
+        if nx.has_path(G, nodes_list[(n - 1 - i)], n) == False:
+            G.add_edge(nodes_list[(n - 1 - i)], n)
 
     return G
